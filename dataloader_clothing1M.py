@@ -65,7 +65,7 @@ class clothing_dataset(Dataset):
         pred=[],
         probability=[],
         paths=[],
-        num_class=14,
+        num_class=16,
     ):
 
         self.root = root
@@ -101,7 +101,7 @@ class clothing_dataset(Dataset):
             for impath in train_imgs:
                 label = self.train_labels[impath]
                 if (
-                    class_num[label] < (num_samples / 14)
+                    class_num[label] < (num_samples / num_class)
                     and len(self.train_imgs) < num_samples
                 ):
                     self.train_imgs.append(impath)
