@@ -1,7 +1,6 @@
 **/data
 **/__pycache__
 **/all
-.vscode
 *.pkl
 **/old
 *.zip
@@ -9,3 +8,6 @@
 other_methods
 *_checkpoints
 checkpoints
+
+.vscode
+.idea/*
